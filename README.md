@@ -19,3 +19,7 @@ Buka `http://localhost:5173`. URL API diatur lewat `VITE_API_URL` (lihat `.env.e
 - `/new`: form artikel baru, tombol Publish dan Draft.
 - `/edit/:id`: ubah artikel.
 - `/preview`: artikel berstatus publish, 5 per halaman.
+
+## Deploy
+
+Import repo ini di Vercel (preset Vite). Set env `VITE_API_URL` ke URL backend, tanpa slash di akhir. `vercel.json` mengarahkan semua path ke `index.html` supaya routing React tidak 404.
